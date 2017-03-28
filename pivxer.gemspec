@@ -1,18 +1,16 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "bitcoind/version"
+require "pivxer/version"
 
 Gem::Specification.new do |s|
-  s.name        = "bitcoind"
-  s.version     = Bitcoind::VERSION
+  s.name        = "pivxer"
+  s.version     = Pivxer::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Bryce Kerley"]
-  s.email       = ["bkerley@brycekerley.net"]
+  s.authors     = ["Craig Williams" , "Bryce Kerley"]
+  s.email       = ["craigwilliamsdev@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Control the bitcoin nework client over JSON-RPC.}
-  s.description = %q{Automate your Bitcoin transactions with this Ruby interface to the bitcoind JSON-RPC API.}
-
-  s.rubyforge_project = "bitcoind"
+  s.summary     = %q{Control the pivx nework client over JSON-RPC.}
+  s.description = %q{Automate your pivx transactions with this Ruby interface to the pivx JSON-RPC API.}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

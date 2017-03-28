@@ -1,4 +1,4 @@
-module Bitcoind
+module Pivxer
   class Account
     extend ActiveSupport::Memoizable
     attr_accessor :name, :balance
@@ -9,7 +9,7 @@ module Bitcoind
     end
 
     def inspect
-      "#<Bitcoind::Account #{self.name.inspect} >"
+      "#<Pivxer::Account #{self.name.inspect} >"
     end
 
     def send_to(destination, amount)

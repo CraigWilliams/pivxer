@@ -1,4 +1,4 @@
-module Bitcoind
+module Pivxer
   class AccountHash < Hash
     def initialize(client, balance_hash)
       @client = client

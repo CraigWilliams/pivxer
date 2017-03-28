@@ -1,4 +1,4 @@
-module Bitcoind
+module Pivxer
   class Client
     def initialize(user, pass)
       @endpoint = "http://#{user}:#{pass}@localhost:51473"
@@ -22,7 +22,7 @@ module Bitcoind
     end
 
     def inspect
-      "#<Bitcoind::Client #{@endpoint.inspect} >"
+      "#<Pivxer::Client #{@endpoint.inspect} >"
     end
   end
 end
